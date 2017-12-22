@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>청년족발</title>
+<meta charset="utf-8" />
+
+<script type="text/javascript">
+<!--
+function setCookie(name, value, expiredays) {
+var today = new Date();
+    today.setDate(today.getDate() + expiredays);
+
+    document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
+}
+
+function closePop() {
+if(document.forms[0].todayPop.checked)
+setCookie('blogWebCafe', 'rangs', 1);
+self.close();
+}
+//-->
+</script>
+
+</head>
+<body>
+<img src="jb.png" width="100%" height="80%">
+
+  <div style="position:absolute; right:0px; bottom:0px;">
+<form>
+<input type="checkbox" name="todayPop" onClick="closePop()">
+오늘 하루 그만보기
+</form>
+</div>
+
+</body>
+</html>
